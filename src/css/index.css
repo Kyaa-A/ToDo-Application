@@ -30,3 +30,6 @@
   @apply mb-2 text-lg font-semibold text-blue-900;
 }
 
+.deleteButton{
+  @apply float-right
+}
