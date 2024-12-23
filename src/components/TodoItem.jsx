@@ -4,7 +4,7 @@ export default function TodoItem({ item }) {
       <div className="itemName">
         {item}
         <span>
-          <button className="deleteButton">Delete</button>
+          <button className="deleteButton">X</button>
         </span>
       </div>
     </div>

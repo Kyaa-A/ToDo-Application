@@ -31,5 +31,5 @@
 }
 
 .deleteButton{
-  @apply float-right
+  @apply float-right px-5 py-1 text-white bg-red-600 rounded-md;
 }
