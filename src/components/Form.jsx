@@ -1,19 +1,20 @@
 import { useState } from "react";
 export default function Form({ todos, setTodos }) {
-  const [todo, setTodo] = useState("");
+  // const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState({ name: "", done: false });
 
   function handleSubmit(e) {
     e.preventDefault();
     setTodos([...todos, todo]);
-    setTodo("");
+    setTodo({ name: "", done: false });
   }
 
   return (
-    <form className="todoform" onSubmit={handleSubmit}>
+    <form className="todoForm" onSubmit={handleSubmit}>
       <input
         className="modernInput"
-        onChange={(e) => setTodo(e.target.value)}
-        value={todo}
+        onChange={(e) => setTodo({name:e.target.value, done: false})}
+        value={todo.name}
         type="text"
         placeholder="Enter your todo"
       />
